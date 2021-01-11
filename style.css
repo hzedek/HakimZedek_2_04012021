@@ -1,0 +1,190 @@
+@font-face {
+    font-family: 'railwayregular';
+    src: url('Railway-webfont.eot');
+    src: url('Railway-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Railway-webfont.woff2') format('woff2'),
+         url('Railway-webfont.woff') format('woff'),
+         url('Railway-webfont.ttf') format('truetype'),
+         url('Railway-webfont.svg#railwayregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.style{
+    font-family:'railwayregular';
+}
+h1 {
+    font-size: 1.5em ; 
+}
+.Logo { 
+    display: flex;
+    justify-content: space-between;
+}
+.marge {
+    margin-left:30px;
+}
+.Nav {
+    display:flex;
+    list-style-type:none;
+    flex-direction:row;
+    justify-content: space-between;
+}
+.element {
+    display: flex;
+    margin-right: 50px;
+    color: gray;
+    border-top: 3px solid transparent;
+    padding-top: 10px;
+}
+.element:hover{
+    color:#DEEBFF;
+    border-top:3px solid #DEEBFF;
+   padding-top: 10px;
+}
+.element:active{
+    color:#0065FC;
+}
+.rechercher{
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+}
+.fa-map-marker-alt{
+    border: 1px solid transparent;
+    padding: 10px;
+    padding-right: 3px;
+    border-top-left-radius: 9px;
+    border-bottom-left-radius: 9px;
+    width: 20px;
+    background-color: #F2F2F2;    
+}
+.map{
+    border: 1px solid transparent;
+    padding: 7px;
+    border-top-right-radius: 9px;
+    border-bottom-right-radius: 9px;
+    background-color: #0065FC;
+    color: white;
+    width: 7%;
+    font-size: 0.9em;
+    
+}
+.filtres{
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+}
+.boxFilter{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 2px solid rgba(66, 66, 66, 0.075);
+    border-left-style: none;
+    border-radius: 40px;
+    margin-right: 20px;
+    
+}
+.filtreWord{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 15px;
+}
+.boxIcon{
+    background-color: #DEEBFF;
+    border: transparent;
+    padding:12px 10px 8px 10px;
+    border-radius: 48%;
+    margin-right: 5px;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+.petiteLigne{
+    color: grey;
+    font-size: 0.9em;
+    display: flex;
+    
+    
+}
+.boxInfo{
+    border: 1px solid grey;
+    padding:5px;
+    border-radius: 49%;
+    width:8px;
+    height:8px;
+    display: flex;
+    justify-content: space-around;
+}
+.marginIcon{
+    margin-left: 10px;
+}
+.main{
+    display: flex;
+    justify-content: space-between;
+}
+.hebergement{
+    border:transparent;
+    background-color: #F2F2F2;
+    box-shadow: black;
+    height: 570px;
+    width: 60%;
+    border-radius: 20px;
+    padding-top: 1%;
+    
+}
+.hebergementLayout{
+    display: flex;
+    flex-wrap:wrap;   
+}
+.figure{
+    border: transparent;
+    background-color: white;
+    border-radius: 20px ;
+    box-shadow: 0px 2px 10px grey;
+    padding: 0.8%;
+    }
+.nuit{
+    color: grey;
+    font-size: 0.9em;
+    line-height: 30px;
+}
+.star{
+    display: flex;
+}
+.fa-star{
+    color:#0065FC;
+}
+.populaire{
+    display: flex;
+    flex-direction: column;
+    border: transparent;
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    height: 570px;
+    width: 30%;
+    margin-right: 30px;
+    padding-top: 1%;
+}
+.pop{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    }
+.fa-chart-line{
+    margin-right: 10%;
+    font-size: 1.5em;
+}
+.legende{
+   display:flex;
+   margin: 5% 10% 0% 5%;
+   flex-direction: column;
+   line-height: 17px;
+}
+.nuit2{ 
+    color: grey;
+    font-size: 0.9em;
+    margin-top: 8px;
+    margin-bottom: 30px;
+}

@@ -1,16 +1,16 @@
 <!doctype html>
 <html class="style">
-<head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css" />
     <link href="css/all.css" rel="stylesheet">
-    <title>reservia</title>
+<head>
+    <title>Reservia</title>
     <header>
         <div class="Logo"><img src="Reservia@3x.png" height="50" width="150" alt="Logo" style="margin-top: 10px;"/>
             <nav>
                 <ul class="Nav">
-                    <li class="element">Hébergements</li>
-                    <li class="element">Activités</li>
+                    <a href="#hebergement"><li class="element">Hébergements</li></a>
+                    <a href="#activite"><li class="element">Activités</li></a>
                     <li class="element">S'inscrire</li>
                 </ul>
             </nav>
@@ -19,13 +19,13 @@
     </header>
 </head>
 
-<body class="marge">
+<body>
     
     <h1>Trouvez votre Hébergements pour des vacances de rêve</h1>
     
-    <p class="petiteLigne" style="line-height: 0px;">En plein centre ville ou en pleine nature</p>
+    <p class="petiteLigne"  style="line-height: 0px;margin-left:30px;">En plein centre ville ou en pleine nature</p>
     
-    <div class="rechercher">
+    <div class="rechercher" style="margin-left:30px;">
         <i class="fas fa-map-marker-alt"></i>
         <form method="post" action="traitement.php">
             <input type="text" name="ville" placeholder="Marseille, France" style="font-weight: bold; height: 30px;padding-left: 4px;"/>
@@ -33,7 +33,7 @@
         <input type="submit" value="Rechercher" class="map" />
     </div>
 
-    <div class="filtres">
+    <div class="filtres" style="margin-left:30px;">
         <p style="margin-right: 20px;">Filtres</p> 
         <p class="boxFilter"> 
             <span class="boxIcon">
@@ -54,16 +54,16 @@
     
     </div>
   
-    <p class="petiteLigne" > 
+    <p class="petiteLigne" style="margin-left:30px;"> 
         <span class="boxInfo"><i class="fas fa-info" style="color: #0065FC; font-size: 10px;"></i></span>
         <span class="marginIcon">Plus de 500 logements sont disponibles dans cette ville</span> 
     </p>
-    <main class="main">
+    <main class="main" style="margin-left:30px;">
         <section class="hebergement">
-            <h1 style="margin-left:4%; ">Hébergements à Marseille</h1>
+            <h1 style="margin-left:4%; " id="hebergement">Hébergements à Marseille</h1>
             <div class="hebergementLayout">
                 <figure style=" margin-right: 10px;" class="figure">
-                    <img src="images/hebergements/3_medium/auberge.jpg" alt="auberge" height="100" width="200px">
+                    <div class="boxImg1"><img src="images/hebergements/3_medium/auberge.jpg" alt="auberge" height="120px" width="200px" ></div>
                         <figcaption style="margin-left: 4%;">
                         <span> Auberge la Cannebière</span><br>
                             <span class="nuit">Nuit à partir de 25€ </span>
@@ -75,7 +75,7 @@
                         </figcaption>
                 </figure>
                 <figure style=" margin-right: 10px;" class="figure">
-                    <img src="images/hebergements/3_medium/hotelPort.jpg" alt="hotelPort" height="100" width="200px">
+                   <div class="boxImg1"><img src="images/hebergements/3_medium/hotelPort.jpg" alt="hotelPort" height="120px" width="220px"></div> 
                         <figcaption style="margin-left: 4%;">
                             <span> Hôtel du port</span><br>
                             <span class="nuit">Nuit à partir de 52€ </span><br>
@@ -89,7 +89,7 @@
                         </figcaption>
                 </figure>
                 <figure style=" margin-right: 10px;" class="figure">
-                    <img src="images/hebergements/3_medium/hotelLesMouettes.jpg" alt="hotelLesMouettes" height="100" width="200px">
+                    <div class="boxImg1"><img src="images/hebergements/3_medium/hotelLesMouettes.jpg" alt="hotelLesMouettes" height="120px" width="220px"></div>
                         <figcaption style="margin-left: 4%;">
                             <span> Hôtel les mouettes</span><br>
                             <span class="nuit">Nuit à partir de 76€ </span><br>
@@ -101,7 +101,7 @@
                         </figcaption>
                 </figure>
                 <figure style=" margin-right: 10px;" class="figure">
-                    <img src="images/hebergements/3_medium/hotelDeLaMer.jpg" alt="hotelDeLaMer" height="100" width="200px">
+                    <div class="boxImg1"><img src="images/hebergements/3_medium/hotelDeLaMer.jpg" alt="hotelDeLaMer" height="135px" width="200px"></div>
                         <figcaption style="margin-left: 4%;">
                             <span> Hôtel de la mer</span><br>
                             <span class="nuit">Nuit à partir de 46€ </span><br>
@@ -113,7 +113,7 @@
                         </figcaption>
                 </figure>
                 <figure style=" margin-right: 10px;" class="figure">
-                    <img src="images/hebergements/3_medium/AubergeLePanier.jpg" alt="AubergeLePanier" height="100" width="200px">
+                    <div class="boxImg1"><img src="images/hebergements/3_medium/AubergeLePanier.jpg" alt="AubergeLePanier" height="120px" width="220px"></div>
                         <figcaption style="margin-left: 4%;">
                             <span>Auberge Le Panier</span><br>
                             <span class="nuit">Nuit à partir de 23€ </span><br>
@@ -125,7 +125,7 @@
                     </figcaption>
                 </figure>
                 <figure style=" margin-right: 10px;" class="figure">
-                    <img src="images/hebergements/3_medium/hotelAmina.jpg" alt="hotelAmina" height="100" width="200px">
+                    <div class="boxImg1"><img src="images/hebergements/3_medium/hotelAmina.jpg" alt="hotelAmina" height="140px" width="200px"></div>
                         <figcaption style="margin-left: 4%;">
                             <span> Hôtel chez Amina</span><br>
                             <span class="nuit">Nuit à partir de 96€ </span><br>
@@ -145,8 +145,8 @@
                 <h1 style="margin-left: 8%;">Les plus populaires</h1>
                 <i class="fas fa-chart-line"></i>
             </div>
-            <figure style="display: flex;" class="figure">
-                <img src="images/hebergements/3_medium/hotelSoleilDuMatin.jpg" height="120px" width="110px" alt="hotelSoleilDuMatin" style="float: left;" >
+            <figure style="display: flex;" class="figure2">
+                <div class="boxImg2"><img src="images/hebergements/3_medium/hotelSoleilDuMatin.jpg" height="130px" width="130px" alt="hotelSoleilDuMatin" style="float: left;"></div>
                 <figcaption>
                     <div class="legende">
                         <span>
@@ -163,8 +163,8 @@
                     </div>
                 </figcaption>
             </figure>
-            <figure style="display: flex;" class="figure">
-                <img src="images/hebergements/3_medium/ChambreHoteCoeur.jpg" height="120px" width="110px" alt="ChambreHoteCoeur" style="float: left;">
+            <figure style="display: flex;" class="figure2">
+                <div class="boxImg2a"><img src="images/hebergements/3_medium/ChambreHoteCoeur.jpg" height="130px" width="145px" alt="ChambreHoteCoeur" style="float: left;"></div>
                 <figcaption>
                     <div class="legende">
                         <span>
@@ -181,8 +181,8 @@
                     </div>
                 </figcaption>
             </figure>
-            <figure style="display: flex;" class="figure">
-                <img src="images/hebergements/3_medium/hotelBleuBlanc.jpg" height="120px" width="110px" alt="hotelBleuBlanc" style="float: left;">
+            <figure style="display: flex;" class="figure2">
+                <div class="boxImg2"><img src="images/hebergements/3_medium/hotelBleuBlanc.jpg" height="150px" width="125px" alt="hotelBleuBlanc" style="float: left;"></div>
                 <figcaption>
                     <div class="legende">
                         <span>
@@ -201,50 +201,72 @@
             </figure>
         </aside>
     </main>
-
-    <section>
-        <h1>Activités à Marseille</h1>
-        <div>
-            <figure>
-                <img src="" alt="">
-                <figcaption>
-                    
+    <section class="marge">
+        <h1 id="activite">Activités à Marseille</h1>
+        <span class="activité">
+            <figure class="figureActivite">
+                <div class="boxImg3"><img src="images/activites/4_small/vieuxPorc.jpg" alt="vieuxPorc" height="390px" width="310px"></div>
+                <figcaption class="activiteTitre">
+                    <span>Vieux Port</span>
                 </figcaption>
             </figure>
-            <figure>
-                <img src="" alt="">
-                <figcaption>
-                    
+            <div class="figureActivite2">
+                <figure class="figureActivite">
+                    <div class="boxImg3a"><img src="images/activites/4_small/fortPomègues.jpg" alt="fortPomègues" height="250px" width="270px"></div>
+                <figcaption class="activiteTitre">
+                    <span>Fort de Pomègues</span>
+                </figcaption>
+                </figure>
+                <figure class="figureActivite">
+                    <div class="boxImg3ab"><img src="images/activites/4_small/ilesFrioule.jpg" alt="ilesFrioule"  height="190px" width="270px"></div>
+                <figcaption class="activiteTitre">
+                    <span>Iles du Frioule</span>
+                </figcaption>
+                </figure>
+            </div>
+            <figure class="figureActivite">
+                <div class="boxImg3"><img src="images/activites/4_small/parcCalanques.jpg" alt="parcCalanques" height="450px" width="390px"></div>
+                <figcaption class="activiteTitre">
+                    <span>Parc National des Calanques</span>
                 </figcaption>
             </figure>
-            <figure>
-                <img src="" alt="">
-                <figcaption>
-                    
-                </figcaption>
-            </figure>
-            <figure>
-                <img src="" alt="">
-                <figcaption>
-                    
-                </figcaption>
-            </figure>
-            <figure>
-                <img src="" alt="">
-                <figcaption>
-                    
-                </figcaption>
-            </figure>
-            <figure>
-                <img src="" alt="">
-                <figcaption>
-                    
-                </figcaption>
-            </figure>
-        </div>   
+            <div class="figureActivite2">
+                <figure class="figureActivite">
+                    <div class="boxImg3b"><img src="images/activites/4_small/notreDame.jpg" alt="notreDame" height="190px" width="270px"></div>
+                    <figcaption class="activiteTitre">
+                    <span>Notre-Dame-de-la-Garde</span> 
+                    </figcaption>
+                </figure>
+                <figure class="figureActivite">
+                    <div class="boxImg3bb"><img src="images/activites/4_small/parcLongchamp.jpg" alt="parcLongchamp" height="145px" width="290px"></div>
+                    <figcaption class="activiteTitre"> 
+                        <span>Parc Lonchamp</span>
+                    </figcaption>
+                </figure>
+            </div>    
+        </span>   
     </section>
 </body>
 
-<footer></footer>
+<footer>
+<div class="foot">
+    <ul class="list">
+        <li><p>A propos</p></li>
+        <li class="listFoot">Fonctionnement du site</li>
+        <li class="listFoot">Conditions générales de vente</li>
+        <li class="listFoot">Données et confidentialité</li>
+    </ul>
+    <ul class="list">
+        <li ><p>Nos Hébergements</p></li>
+        <li class="listFoot">Charte qualité</li>
+        <li class="listFoot">Soumettre votre hôtel</li>
+    </ul>
+    <ul class="list">
+        <li><p>Assistance</p></li>
+        <li class="listFoot">Centre d'aide</li>
+        <li class="listFoot">Nous contacter</li>
+    </ul>
+</div>
+</footer>
 
 </html>

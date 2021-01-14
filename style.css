@@ -15,15 +15,18 @@
     font-family:'railwayregular';
 }
 h1 {
-    font-size: 1.5em ; 
+    font-size: 1.5em ;
+    margin-left:30px;
 }
 .Logo { 
     display: flex;
     justify-content: space-between;
+    margin-left:30px;
 }
 .marge {
     margin-left:30px;
 }
+/*Css Nav*/
 .Nav {
     display:flex;
     list-style-type:none;
@@ -45,6 +48,7 @@ h1 {
 .element:active{
     color:#0065FC;
 }
+/*css Recherche*/
 .rechercher{
     display: flex;
     flex-direction: row;
@@ -70,6 +74,7 @@ h1 {
     font-size: 0.9em;
     
 }
+/*Css Filtres*/
 .filtres{
     display: flex;
     align-items: center;
@@ -120,6 +125,7 @@ h1 {
 .marginIcon{
     margin-left: 10px;
 }
+/*Css Main*/
 .main{
     display: flex;
     justify-content: space-between;
@@ -144,7 +150,15 @@ h1 {
     border-radius: 20px ;
     box-shadow: 0px 2px 10px grey;
     padding: 0.8%;
-    }
+}
+.figure2{
+        border: transparent;
+        background-color: white;
+        border-radius: 15px ;
+        box-shadow: 0px 2px 10px grey;
+        padding: 1%;
+        
+}
 .nuit{
     color: grey;
     font-size: 0.9em;
@@ -187,4 +201,121 @@ h1 {
     font-size: 0.9em;
     margin-top: 8px;
     margin-bottom: 30px;
+}
+/*Css pour Section activité*/
+.activité{
+    display: flex;
+    flex-wrap: wrap;
+    height: max-content;
+    justify-content: space-between;
+    margin-left: -35px;
+}
+.figureActivite{
+    border: transparent;
+    background-color: white;
+    border-radius: 20px ;
+    box-shadow: 0px 2px 10px grey;
+    width:max-content;
+    height:max-content;
+}
+.figureActivite2{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.activiteTitre{
+    margin:2% 0% 2% 4%;
+}
+/*Css Footer*/
+footer{
+    background-color: #F2F2F2;
+    margin-left: -2%;
+}
+.foot{
+    display: flex;
+    justify-content: space-around;
+}
+.list{
+    list-style-type:none;
+    margin-inline-start: -235px;
+}
+.listFoot{
+    color: grey;
+    font-size: 0.9em;
+}
+/*Css pour IMAGE*/
+.boxImg1{
+    border:transparent;
+    height:100px;
+    width:200px;
+    overflow: hidden;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.boxImg2{
+    border:transparent;
+    height:120px;
+    width:120px;
+    overflow: hidden;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.boxImg2a{
+    border:transparent;
+    height:120px;
+    width:150px;
+    overflow: hidden;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.boxImg3{
+    border:transparent;
+    height:350px;
+    width:270px;
+    overflow: hidden;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.boxImg3a{
+    border:transparent;
+    height:160px;
+    width:270px;
+    overflow: hidden;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}.boxImg3ab{
+    border:transparent;
+    height:120px;
+    width:270px;
+    overflow: hidden;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.boxImg3b{
+    border:transparent;
+    height:135px;
+    width:270px;
+    overflow: hidden;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.boxImg3ba{
+    border:transparent;
+    height:145px;
+    width:270px;
+    overflow: hidden;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+figure:active{
+    color:#0065FC;
+    background-color: #DEEBFF;
+    box-shadow: none;
+}
+.boxFilter:hover{
+    color: #0065FC;
+    background-color: #F2F2F2;
+}
+a{
+ text-decoration: none;
 }

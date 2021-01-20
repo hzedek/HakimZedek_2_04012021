@@ -1,14 +1,15 @@
 <!doctype html>
 <html>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" media="screen and (min-width:1401px)"  href="style.css" />
     <link href="css/all.css" rel="stylesheet">
+    <link rel="stylesheet" media="screen and (max-width: 1400px)" href="petite_resolution.css" />
 <head>
     <title>Reservia</title>
 </head>
 
 <body>
-    <header>
+    <header class="header">
         <img src="Reservia@3x.png" height="50" width="150" alt="Logo"/>
         <nav>
             <ul class="nav">
@@ -18,9 +19,21 @@
             </ul>
         </nav>
     </header>
+
+    <header class="headerMobile">
+        <div class="logo">
+            <img src="Reservia@3x.png" height="50" width="150" alt="Logo"/>
+            <p style="color: #0065FC;">S'inscrire</p>
+        </div>
+        <nav class="navMobile">
+            <a href="#hebergement"><p class="element">Hébergements</p></a>
+            <a href="#activite"><p class="element">Activités</p></a>
+        </nav>
+    </header>
+    
     <main>
-        <section>
-            <h1>Trouvez votre Hébergements pour des vacances de rêve</h1> 
+        <section class="mobileSection">
+            <h1> <span> Trouvez votre Hébergements</span> pour des vacances de rêve</h1> 
             <p class="textLine">En plein centre ville ou en pleine nature</p>
             
             <div class="search">
@@ -28,9 +41,17 @@
                 <input type="text" name="ville" placeholder="Marseille, France" style="padding-left: 10px;"/>
                 <input type="submit" value="Rechercher" class="map" />
             </div>
-    
+
+            <div class="searchMobile">
+                <i class="fas fa-map-marker-alt"></i>
+                <input type="text" name="ville" placeholder="Marseille, France" class="inputBox" style="padding-left: 10px;"/>
+                <button class="btn-search"><i class="fas fa-search"></i></button>
+           
+            </div>
+            
+            <p class="filterReduced">Filtres</p>
             <ul class="filter">
-                <li><p>Filtres</p></li>
+                <li class="filterDesktop">Filtres</li>
                 <li class="boxFilter">
                     <i class="fas fa-money-bill-wave"></i>
                     <span class="filterWord"> Économique</span>
@@ -145,41 +166,29 @@
                 <p style="font-size: 1.1em;">Afficher plus</p>
         </section>
         <aside>
-        <h2>Les plus populaires</h2>
-        <i class="fas fa-chart-line"></i>
-        <figure class="figure2">
-            <img src="images/hebergements/3_medium/hotelSoleilDuMatin.jpg" alt="hotelSoleilDuMatin" class="boxImg2">
-            <figcaption>
-                <h3> <strong> Hôtel Le soleil du matin </strong></h3>
-                <p class="night2"> Nuit à partir de 128€ </p>
-                <div class="star2">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                     <i class="fas fa-star"></i>
-                </div>
-            </figcaption>
-        </figure>
-        <figure class="figure2">
-            <img src="images/hebergements/3_medium/ChambreHoteCoeur.jpg" alt="ChambreHoteCoeur"  class="boxImg2a">
-            <figcaption>
-                    <h3> <strong>Au coeur de l'eau Chambres d'hotes</strong></h3>
-                    <p class="night2"> Nuit à partir de 71€ </p>
-                <div class="star2">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star" style="color: lightgrey;"></i>
-                </div>
+            <div class="asideTitle">
+                <h2>Les plus populaires</h2>
+                <i class="fas fa-chart-line"></i>
+            </div>
+            <figure class="figure2">
+                <img src="images/hebergements/3_medium/hotelSoleilDuMatin.jpg" alt="hotelSoleilDuMatin" class="boxImg2">
+                <figcaption>
+                    <h3> <strong> Hôtel Le soleil du matin </strong></h3>
+                    <p class="night2"> Nuit à partir de 128€ </p>
+                    <div class="star2">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
                 </figcaption>
             </figure>
             <figure class="figure2">
-                <img src="images/hebergements/3_medium/hotelBleuBlanc.jpg"alt="hotelBleuBlanc" class="boxImg2">
+                <img src="images/hebergements/3_medium/ChambreHoteCoeur.jpg" alt="ChambreHoteCoeur"  class="boxImg2a">
                 <figcaption>
-                    <h3> <strong>Hôtel Tout bleu et Blanc  </strong></h3>
-                    <p class="night2">  Nuit à partir de 68€ </p>
+                        <h3> <strong>Au coeur de l'eau Chambres d'hotes</strong></h3>
+                        <p class="night2"> Nuit à partir de 71€ </p>
                     <div class="star2">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -187,10 +196,24 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star" style="color: lightgrey;"></i>
                     </div>
+                    </figcaption>
+            </figure>
+            <figure class="figure2">
+                <img src="images/hebergements/3_medium/hotelBleuBlanc.jpg"alt="hotelBleuBlanc" class="boxImg2">
+                <figcaption>
+                    <h3> <strong>Hôtel Tout bleu et Blanc  </strong></h3>
+                    <p class="night2">  Nuit à partir de 68€ </p>
+                    <div class="star2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star" style="color: lightgrey;"></i>
+                    </div>
                 </figcaption>
             </figure>
         </aside>
-        <section>
+        <section class="activityOrder">
             <h2 id="activite">Activités à Marseille</h2>
             <div class="activity">
                 <figure class="figureActivity">

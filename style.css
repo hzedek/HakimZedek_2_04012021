@@ -446,13 +446,15 @@ a{
  text-decoration: none;
 }
 
-@media screen and (max-width: 1200px)
+@media screen and (max-width: 1400px)
 {
     h1,.textLine,.searchMobile,.infoLayout,
-    .filterLayout,.accomodation h2 , .accomodationLayout + p,
-    #activite,.asideTitle, .figure2,.activity{
-             margin-left: 30px;
-     }
+.filterLayout{
+    margin-left: 30px;
+}
+    main{
+        margin-bottom: 40px;
+    }
     header img{
         margin-left: 30px;
         margin-top: 10px;
@@ -585,7 +587,6 @@ a{
     .sectionLayout{
         display: flex;
         flex-direction: column-reverse;
-        margin: 0px;
         width: 100%;
     }
     aside{
@@ -596,22 +597,27 @@ a{
     .accomodation{
         background-color: transparent;
         height: 100%;
-        width:300px;
+        width: 100%;
+    }
+    .accomodation h2 , .accomodationLayout + p{
+        width: 300px;
+        margin: 20px auto;
     }
     .accomodationLayout{
-        margin-left: 60px;
+        justify-content: center;
+        flex-direction: column;
     }
     .figure{
         height: 180px;
         padding: 5px;
         width: 300px;
+        margin: 10px auto;
     }
     .figure2{
         width: 300px;
         padding: 5px;
-        margin: 0px;
+        margin: auto;
         margin-bottom:20px;
-        margin-left: 30px;
     }
     .boxImg1{
         height:100px;
@@ -623,6 +629,14 @@ a{
     .activity{
         flex-direction: column;
         width: 300px;
+        margin: auto;
+    }
+    #activite{
+        margin: 20px auto;
+        width: 300px;
+    }
+    .sectionLayout, .activity{ 
+        margin-bottom:0px ;
     }
     .boxImg3a ,.boxImg3aa ,.boxImg3b,
     .boxImg3bb ,.boxImg3 {
@@ -631,13 +645,24 @@ a{
     }
     .footerLayout{
         flex-direction: column;
-        margin-top: 40px;
         width: 300px;
         padding-bottom: 50px;
-        margin-left: 0px;
-        
+        margin: auto;
+        margin-top: 40px;
     }
     .list{
         width: 100%;
     }
+}
+@media screen and (max-width: 500px)
+{
+.accomodation h2 , .accomodationLayout + p,
+#activite,.asideTitle,.figure, .figure2,.activity{
+         margin-left: 30px;
+ }
+ .footerLayout{
+    margin: 0px;
+    margin-top: 50px;
+}
+
 }

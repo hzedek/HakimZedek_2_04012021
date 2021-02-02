@@ -3,8 +3,8 @@
     --color-lightblue: #DEEBFF;
     --color-grey: #F2F2F2;
     --fontw-700: 700;
-    --width: 500px;
-    --width-mobile:300px
+    --width: 300px;
+    --width-tab:300px
 }
 
 @font-face {
@@ -611,14 +611,9 @@ a{
         margin: 20px auto;
     }
     .accomodationLayout{
-        justify-content: center;
-        flex-direction: column;
-    }
-    .figure{
-        height: 180px;
-        padding: 5px;
-        width: var(--width);
-        margin: 10px auto;
+        justify-content: space-around;
+        width: 90%;
+        margin: auto;
     }
     .figure2{
         width: var(--width);
@@ -626,17 +621,12 @@ a{
         margin: auto;
         margin-bottom:20px;
     }
-    .boxImg1{
-        height:100px;
-        width:var(--width);
-    }
     .boxImg2a{
         width: 120px;
     }
     .activity{
-        flex-direction: column;
-        width: var(--width);
-        margin: auto;
+        width: 100%;
+        justify-content: space-evenly;
     }
     #activite{
         margin: 20px auto;
@@ -645,8 +635,12 @@ a{
     .sectionLayout, .activity{ 
         margin-bottom:0px ;
     }
+    .boxImg3{
+        width: var(--width);
+        height: fit-content;
+    }
     .boxImg3a ,.boxImg3aa ,.boxImg3b,
-    .boxImg3bb ,.boxImg3 {
+    .boxImg3bb {
         height:140px;
         width:var(--width);
     }
@@ -654,7 +648,6 @@ a{
         flex-direction: column;
         width: var(--width);
         padding-bottom: 50px;
-        margin: auto;
         margin-top: 40px;
     }
     .list{
@@ -671,5 +664,25 @@ a{
     margin: 0px;
     margin-top: 50px;
 }
-
+.figure{
+    height: 180px;
+    padding: 5px;
+    width: var(--width);
+    margin: 10px auto;
+}
+.boxImg1{
+    height:100px;
+    width:var(--width);
+}
+.accomodationLayout{
+    justify-content: none;
+    width: 100%%;
+    margin: none;
+}
+.activity{
+    justify-content: unset;
+}
+.boxImg3{
+height:140px;
+}
 }

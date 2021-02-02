@@ -3,6 +3,8 @@
     --color-lightblue: #DEEBFF;
     --color-grey: #F2F2F2;
     --fontw-700: 700;
+    --width: 500px;
+    --width-mobile:300px
 }
 
 @font-face {
@@ -14,12 +16,14 @@
     font-weight: normal;
     font-style: normal;
 }
-
+html{
+    margin: 0;
+}
 body{
     font-family:'ralewayregular', Arial, Helvetica, sans-serif;
     position: relative;
     max-width: 1480px;
-    margin: 0px;
+    margin: auto;
 }
 header{
     display: flex;
@@ -594,13 +598,16 @@ a{
         height: 100%;
         border-radius: 0px;
     }
+    .asideTitle{
+        width: var(--width);
+    }
     .accomodation{
         background-color: transparent;
         height: 100%;
         width: 100%;
     }
     .accomodation h2 , .accomodationLayout + p{
-        width: 300px;
+        width: var(--width);
         margin: 20px auto;
     }
     .accomodationLayout{
@@ -610,30 +617,30 @@ a{
     .figure{
         height: 180px;
         padding: 5px;
-        width: 300px;
+        width: var(--width);
         margin: 10px auto;
     }
     .figure2{
-        width: 300px;
+        width: var(--width);
         padding: 5px;
         margin: auto;
         margin-bottom:20px;
     }
     .boxImg1{
         height:100px;
-        width:300px;
+        width:var(--width);
     }
     .boxImg2a{
-        width: 180px;
+        width: 120px;
     }
     .activity{
         flex-direction: column;
-        width: 300px;
+        width: var(--width);
         margin: auto;
     }
     #activite{
         margin: 20px auto;
-        width: 300px;
+        width: var(--width);
     }
     .sectionLayout, .activity{ 
         margin-bottom:0px ;
@@ -641,11 +648,11 @@ a{
     .boxImg3a ,.boxImg3aa ,.boxImg3b,
     .boxImg3bb ,.boxImg3 {
         height:140px;
-        width:300px;
+        width:var(--width);
     }
     .footerLayout{
         flex-direction: column;
-        width: 300px;
+        width: var(--width);
         padding-bottom: 50px;
         margin: auto;
         margin-top: 40px;

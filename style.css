@@ -6,7 +6,6 @@
     --width: 300px;
     --width-tab:300px
 }
-
 @font-face {
     font-family: 'ralewayregular';
     src: url('./raleway/raleway-regular-webfont.woff2') format('woff2'),
@@ -60,7 +59,6 @@ h3{
     margin-top: 3px;
     margin-bottom: 0%;
     font-size: 1em;
-    
 }
 h4{
     font-weight: 600;
@@ -86,33 +84,27 @@ figcaption{
     left: 0;
     transition: width .5s;
 }
-
 .nav a:hover:before {
     width: 100%;
 }
-
 .nav{
     display:flex;
     list-style-type:none;
     justify-content: space-between;
 }
-
 .nav .element a{
     color: black;
     border-top: 3px solid transparent;
     margin-left: 60px;
     position: relative;
 }
-
 .nav .element a:hover,
 .nav .element.active a{
     color: var(--color-blue);
 }
-
 .nav .element.active a{
     font-weight: var(--fontw-700);
 }
-
 .element:active{
     color:black;
 }
@@ -141,7 +133,6 @@ input[type="text"]{
     font-size: 16px;
     opacity: 100%;
 }
-
 input[type="text"] {
     width: 170px;
     border: none;
@@ -149,7 +140,6 @@ input[type="text"] {
     border-bottom: 2px solid #F2F2F2;
     padding-left: 20px;
 }
-
 .map{
     font-size: 19px;
     border: 1px solid transparent;
@@ -161,7 +151,6 @@ input[type="text"] {
     width: 140px;
 }
 /*Css Filtres*/
-
 .filterLayout{
     display: flex;
     align-items: baseline;
@@ -449,7 +438,6 @@ figure:active{
 a{
  text-decoration: none;
 }
-
 @media screen and (max-width: 1400px)
 {
     h1,.textLine,.searchMobile,.infoLayout,
@@ -657,34 +645,33 @@ a{
 }
 @media screen and (max-width: 500px)
 {
-
- .figure{
-        height: 180px;
-        padding: 5px;
-        width: var(--width);
-        margin: 10px 0;
-}
-.accomodation h2 , .accomodationLayout + p,
-#activite,.asideTitle,.figure, .figure2,.activity{
-         margin-left: 30px;
- }
- .footerLayout{
-    margin: 0px;
-    margin-top: 50px;
-}
-.boxImg1{
-    height:100px;
-    width:var(--width);
-}
-.accomodationLayout{
-    width: 100%;
-    justify-content: unset;
-    margin: 0;
-}
-.activity{
-    justify-content: unset;
-}
-.boxImg3{
-height:140px;
-}
+    .figure{
+            height: 180px;
+            padding: 5px;
+            width: var(--width);
+            margin: 10px 0;
+    }
+    .accomodation h2 , .accomodationLayout + p,
+    #activite,.asideTitle,.figure, .figure2,.activity{
+        margin-left: 30px;
+    }
+    .footerLayout{
+        margin: 0px;
+        margin-top: 50px;
+    }
+    .boxImg1{
+        height:100px;
+        width:var(--width);
+    }
+    .accomodationLayout{
+        width: 100%;
+        justify-content: unset;
+        margin: 0;
+    }
+    .activity{
+        justify-content: unset;
+    }
+    .boxImg3{
+        height:140px;
+    }
 }

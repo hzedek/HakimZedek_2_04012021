@@ -506,12 +506,13 @@ a{
         display: none;
     }
     .element.active:hover{
-        border: none;
         position: absolute;
         top: 10px;
-        right: 0;
+        right: 0px;
         width: initial;
-        margin: 0;
+        margin-right: 20px;
+        margin-top: 10px;
+        border-bottom: none;
     }
     .element.active {
         position: absolute;
@@ -656,6 +657,13 @@ a{
 }
 @media screen and (max-width: 500px)
 {
+
+ .figure{
+        height: 180px;
+        padding: 5px;
+        width: var(--width);
+        margin: 10px 0;
+}
 .accomodation h2 , .accomodationLayout + p,
 #activite,.asideTitle,.figure, .figure2,.activity{
          margin-left: 30px;
@@ -664,20 +672,14 @@ a{
     margin: 0px;
     margin-top: 50px;
 }
-.figure{
-    height: 180px;
-    padding: 5px;
-    width: var(--width);
-    margin: 10px auto;
-}
 .boxImg1{
     height:100px;
     width:var(--width);
 }
 .accomodationLayout{
-    justify-content: none;
-    width: 100%%;
-    margin: none;
+    width: 100%;
+    justify-content: unset;
+    margin: 0;
 }
 .activity{
     justify-content: unset;

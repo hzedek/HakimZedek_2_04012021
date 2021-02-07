@@ -72,7 +72,9 @@ figcaption{
 }
 
 /*Css Nav*/
-
+a{
+    text-decoration: none;
+   }
 .nav a:before {
     content:"";
     width: 0;
@@ -316,7 +318,7 @@ aside{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 100%;   
+    width: 100%;
 }
 .figureActivity{
     border: transparent;
@@ -435,15 +437,13 @@ figure:active{
     color: #0065FC;
     background-color: #F2F2F2;
 }
-a{
- text-decoration: none;
-}
 @media screen and (max-width: 1400px)
 {
+ /*Css tablette*/
     h1,.textLine,.searchMobile,.infoLayout,
 .filterLayout{
     margin-left: 30px;
-}
+    }
     main{
         margin-bottom: 40px;
     }
@@ -473,6 +473,7 @@ a{
     .textLine{
         font-weight: normal;
     }
+    /*Css header max-width: 1400px*/
     header{
         display: block;
         margin: 0px;
@@ -520,6 +521,7 @@ a{
         border-bottom: 2px solid #0065FC;
         width: 100%;
     }
+    /*Css Search max-width: 1400px*/
     .search{
         display: none;
     }
@@ -552,6 +554,7 @@ a{
         padding:16px;
         margin-left: -12px;
     }
+    /*Css FILTER max-width: 1400px*/
     .filter{
         flex-wrap: wrap;
         margin-left: -40px;
@@ -577,6 +580,7 @@ a{
     .fa-info{
       float: left;
     }
+/*Css section accomodation aside max-width: 1400px*/
     .sectionLayout{
         display: flex;
         flex-direction: column-reverse;
@@ -613,6 +617,7 @@ a{
     .boxImg2a{
         width: 120px;
     }
+    /*Css Activity max-width: 1400px*/
     .activity{
         width: 100%;
         justify-content: space-evenly;
@@ -633,6 +638,7 @@ a{
         height:140px;
         width:var(--width);
     }
+    /*Css FOOTER max-width: 1400px*/
     .footerLayout{
         flex-direction: column;
         width: var(--width);
@@ -645,6 +651,7 @@ a{
 }
 @media screen and (max-width: 500px)
 {
+    /*Css Phone*/
     .figure{
             height: 180px;
             padding: 5px;

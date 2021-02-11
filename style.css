@@ -270,6 +270,9 @@ input[type="text"] {
 .fa-star{
     color:var(--color-blue);
 }
+.fa-star.starColor{
+    color:lightgrey;
+}
 .bold{
     font-weight: bold;
 }
@@ -592,12 +595,14 @@ figure:active{
         border-radius: 0px;
     }
     .asideTitle{
-        width: var(--width);
+        width: 50%;
+       min-width: 500px;
     }
     .accomodation{
         background-color: transparent;
         height: 100%;
-        width: 100%;
+        width: 75%;
+        margin: 0 auto;
     }
     .accomodation h2 , .accomodationLayout + p{
         width: var(--width);
@@ -609,18 +614,26 @@ figure:active{
         margin: auto;
     }
     .figure2{
-        width: var(--width);
+        width: 50%;
+        min-width: 500px;
         padding: 5px;
         margin: auto;
         margin-bottom:20px;
     }
+    .boxImg2{
+        width: 40%;
+        min-width: 120px;
+    }
     .boxImg2a{
-        width: 120px;
+        width: 40%;
+        min-width: 120px;
     }
     /*Css Activity max-width: 1400px*/
     .activity{
-        width: 100%;
+        width: 60%;
         justify-content: space-evenly;
+        margin: 0 auto;
+
     }
     #activite{
         margin: 20px auto;
@@ -649,18 +662,33 @@ figure:active{
         width: 100%;
     }
 }
-@media screen and (max-width: 500px)
+@media screen and (max-width: 1074px)
+{
+    .accomodation{
+        width: 85%;
+    }
+    .activity{
+        width: 80%;
+    }
+}
+@media screen and (max-width: 550px)
 {
     /*Css Phone*/
+    .asideTitle{
+        width: var(--width);
+        min-width: var(--width);
+    }
+    .figure2{
+        min-width: var(--width);
+    }
     .figure{
             height: 180px;
             padding: 5px;
             width: var(--width);
-            margin: 10px 0;
+            margin: 10px auto;
     }
-    .accomodation h2 , .accomodationLayout + p,
-    #activite,.asideTitle,.figure, .figure2,.activity{
-        margin-left: 30px;
+    .figureActivity, .figureActivity2{
+        margin: 10px auto;
     }
     .footerLayout{
         margin: 0px;
@@ -677,6 +705,7 @@ figure:active{
     }
     .activity{
         justify-content: unset;
+        width: 100%;
     }
     .boxImg3{
         height:140px;
